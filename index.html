@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8" />
@@ -2692,7 +2692,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <script>
 /* OUTRAS CRIAÇÕES — CARROSSEL NO MODAL */
 (function(){
-  const carousels = {'dentista': ['dentista-01.jpg', 'dentista-02.jpg', 'dentista-03.jpg', 'dentista-04.jpg', 'dentista-05.jpg', 'dentista-06.jpg', 'dentista-07.jpg'], 'manicure': ['manicure-01.jpg', 'manicure-02.jpg', 'manicure-03.jpg', 'manicure-04.jpg', 'manicure-05.jpg', 'manicure-06.jpg', 'manicure-07.jpg'], 'maquiadora': ['maquiadora-01.jpg', 'maquiadora-02.jpg', 'maquiadora-03.jpg', 'maquiadora-04.jpg', 'maquiadora-05.jpg', 'maquiadora-06.jpg', 'maquiadora-07.jpg'], 'designer': ['designer-01.jpg', 'designer-02.jpg', 'designer-03.jpg', 'designer-04.jpg', 'designer-05.jpg', 'designer-06.jpg', 'designer-07.jpg']};
+  const carousels = {'dentista': ['dentista-01.jpg', 'dentista-02.jpg', 'dentista-03.jpg', 'dentista-04.jpg', 'dentista-05.jpg', 'dentista-06.jpg', 'dentista-07.jpg'], 'manicure': ['manicure-01.jpeg', 'manicure-02.jpeg', 'manicure-03.jpeg', 'manicure-04.jpeg', 'manicure-05.jpeg', 'manicure-06.jpeg', 'manicure-07.jpeg'], 'maquiadora': ['maquiadora-01.jpg', 'maquiadora-02.jpg', 'maquiadora-03.jpg', 'maquiadora-04.jpg', 'maquiadora-05.jpg', 'maquiadora-06.jpg', 'maquiadora-07.jpg'], 'designer': ['designer-01.jpg', 'designer-02.jpg', 'designer-03.jpg', 'designer-04.jpg', 'designer-05.jpg', 'designer-06.jpg', 'designer-07.jpg']};
 
   const modal = document.getElementById('creativeCarouselModal');
   const img = document.getElementById('carouselImage');
@@ -3416,7 +3416,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 <style>
-/* ===== ajustes finais v34 — manicure jpg, quebra sobre e x modal ===== */
+/* ===== ajustes finais v34 — manicure jpeg, quebra sobre e x modal ===== */
 
 /* quebra de linha apenas no desktop */
 @media (max-width:700px){
@@ -3458,6 +3458,32 @@ document.addEventListener('DOMContentLoaded', () => {
     width:100% !important;
     max-width:100% !important;
     display:block !important;
+  }
+}
+</style>
+
+
+<style>
+/* ===== correção final — X do modal no mobile ===== */
+
+/* Mobile: X volta para a pontinha do quadro, sem acompanhar a rolagem por cima da imagem */
+@media (max-width:700px){
+  .project-info-card{
+    position:relative !important;
+  }
+
+  .project-info-close{
+    position:absolute !important;
+    top:14px !important;
+    right:14px !important;
+    transform:none !important;
+    margin-left:0 !important;
+    z-index:40 !important;
+    background:transparent !important;
+    border:0 !important;
+    width:34px !important;
+    height:34px !important;
+    font-size:24px !important;
   }
 }
 </style>
